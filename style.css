@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --white: #fff;
+  --dark1: #1c1e21;
+  --dark2: #050505;
+  --link-hover: #65676b;
+  --bg: #f0f2f5;
+  --bx-shadow: #131313;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  height: 100%;
+  font-size: 100%;
+}
+body {
+  font-size: 1.5rem;
+  background-color: var(--bg);
+  font-family: 'Segoe UI' sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* ############
+# header page #
+############### */
+
+.post {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 45rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.2rem #e6e2e2;
+}
+
+.header__post {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1.6rem 0 1.6rem;
+}
+
+/* left header */
+.left__header {
+  flex: 1;
+}
+
+.name :hover,
+.date :hover {
+  text-decoration: underline;
+}
+
+.vrefied img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.img {
+  width: 4rem;
+  height: 4rem;
+  float: left;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 0.1rem 0.2rem #2e2e2e;
+}
+
+.name {
+  margin-right: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark2);
+}
+
+.date {
+  display: block;
+  float: left;
+  font-size: 1.3rem;
+  color: var(--dark1);
+}
+
+.date span {
+  position: relative;
+  top: 0.1rem;
+  margin-left: 0.3rem;
+}
+
+/* left header */
+
+.option {
+  padding: 1rem;
+  border-radius: 50%;
+  line-height: 50%;
+  cursor: pointer;
+}
+
+.option__icon {
+  height: 2rem;
+  width: rem;
+  position: relative;
+  opacity: 0.6;
+}
+/* not nesserry */
+.side {
+  margin-top: 0.9rem;
+}
+
+/* ############
+# content page #
+############### */
+
+.content__pragraph {
+  font-size: 1.5rem;
+  padding: 1.2rem 1.6rem;
+}
+.content__pragraph span :hover {
+  color: rgb(19, 95, 146);
+}
+.content__img {
+  width: 100%;
+  height: 32rem;
+  display: block;
+  object-fit: cover;
+}
+
+/* ############
+# footer page #
+############### */
+
+/* REACTIONS */
+.footer__reactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.6rem;
+  color: var(--reactions-links);
+  font-size: 1.5rem;
+}
+
+.reactions__emojis {
+  display: flex;
+  align-items: center;
+}
+
+.emojis__like,
+.emojis__haha,
+.emojis__love {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.emojis__like {
+  z-index: 2;
+}
+
+.emojis__haha {
+  z-index: 1;
+  left: -0.2rem;
+}
+
+.emojis__love {
+  left: -0.4rem;
+}
+
+.emojis__count {
+  margin-left: 0.3rem;
+}
+
+.comment-shares__shares {
+  margin-left: 0.2rem;
+}
+
+.emojis__count:hover,
+.comment-shares__comments:hover,
+.comment-shares__shares:hover {
+  text-decoration: underline;
+}
+
+
+
+/* button */
+
+
+
+
+/* BUTTONS (LIKE, COMMENT, SHARE) */
+.footer__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.2rem;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.buttons__like,
+.buttons__comment,
+.buttons__share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 3.5rem;
+  margin: 0.2rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  color: var(--reactions-links);
+  cursor: pointer;
+}
+
+.buttons__like:hover,
+.buttons__comment:hover,
+.buttons__share:hover {
+  background: var(--hover-shadow);
+}
+
+.like__icon,
+.comment__icon,
+.share__icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline-block;
+  background-image: url("../images/icons-list-3.png");
+  background-size: 2.6rem 77.4rem;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  margin-right: 0.5rem;
+}
+
+/* end .. */
